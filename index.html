@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Página de acesso ao aplicativo Melodia do Amor."
+    />
+    <title>Melodify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="landing-view" class="site-view is-active">
+      <section class="hero" aria-labelledby="success-title">
+        <p class="hero__eyebrow">Pagamento aprovado com sucesso!</p>
+        <h1 id="success-title">Parabéns!</h1>
+        <p class="hero__copy">
+          Agora você já pode acessar o aplicativo
+          <strong>Melodia do Amor.</strong><br />
+          Seu acesso também foi enviado para o seu e-mail (verifique a caixa de<br
+            class="desktop-break"
+          />
+          spam ou promoções, se necessário).
+        </p>
+        <a class="button button--wide" href="#cadastro" data-open-register
+          >Clique para acessar</a
+        >
+      </section>
+
+      <section class="instructions" aria-labelledby="instructions-title">
+        <div class="instructions__content">
+          <h2 id="instructions-title">Como acessar<br />o app</h2>
+          <div class="instructions__text">
+            <p>
+              <strong>Campo de e-mail:</strong> digite o mesmo e-mail<br
+                class="desktop-break"
+              />
+              utilizado na compra<br />
+              <strong>Campo de senha:</strong> use a senha que você criar<br
+                class="desktop-break"
+              />
+              no cadastro
+            </p>
+            <p>
+              Pronto. Assim que fizer login, suas melodias já<br
+                class="desktop-break"
+              />
+              estarão liberadas no aplicativo.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="login-card login-card--visual"
+          aria-hidden="true"
+          inert
+        >
+          <div class="login-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path
+                d="M9 18V5.25L19 3v12.7a3.2 3.2 0 1 1-1.65-2.8V7.7L10.6 9.2V18A3.2 3.2 0 1 1 9 15.23Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </div>
+          <h3>Bem-vindo de volta</h3>
+          <p class="login-card__subtitle">Entre na sua conta para continuar</p>
+
+          <form class="login-card__form" action="#" onsubmit="return false;">
+            <label class="sr-only" for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="E-mail" />
+
+            <label class="sr-only" for="password">Senha</label>
+            <div class="password-field">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Senha"
+              />
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M2.5 12s3.4-5 9.5-5 9.5 5 9.5 5-3.4 5-9.5 5-9.5-5-9.5-5Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="2.35"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+              </svg>
+            </div>
+
+            <div class="login-card__options">
+              <label class="remember">
+                <input type="checkbox" />
+                <span aria-hidden="true"></span>
+                Lembrar-me
+              </label>
+              <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit">Entrar</button>
+          </form>
+
+          <p class="login-card__signup">
+            Não tem uma conta? <a href="#">Criar conta</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="important" aria-labelledby="important-title">
+        <h2 id="important-title">Acesso importante:</h2>
+        <p>
+          Guia completo ensinando como ouvir as melodias de acordo com a sua<br
+            class="desktop-break"
+          />
+          situação, seja para reconquistar um relacionamento ou atrair um novo<br
+            class="desktop-break"
+          />
+          amor.
+        </p>
+        <a
+          class="button button--download"
+          href="downloads/guia-mda.pdf"
+          download="Guia-Melodia-do-Amor.pdf"
+          >Download</a
+        >
+
+        <footer>
+          <p>Melodia do Amor 2026 © | Todos os direitos reservados</p>
+          <nav aria-label="Links legais">
+            <a href="#">Política de Privacidade</a>
+            <span aria-hidden="true">|</span>
+            <a href="#">Termos de Uso</a>
+          </nav>
+        </footer>
+      </section>
+      </div>
+
+      <section
+        id="auth-view"
+        class="site-view auth-view"
+        aria-labelledby="auth-title"
+        hidden
+      >
+        <button class="auth-back" type="button" data-back-home>
+          <span aria-hidden="true">←</span> Voltar
+        </button>
+
+        <div class="auth-panel">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M9 18V5.25L19 3v12.7a3.2 3.2 0 1 1-1.65-2.8V7.7L10.6 9.2V18A3.2 3.2 0 1 1 9 15.23Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </div>
+
+          <div id="register-panel">
+            <h2 id="auth-title">Crie seu acesso</h2>
+            <p>Cadastre-se com o mesmo e-mail utilizado na compra</p>
+
+            <form id="register-form" class="auth-form">
+              <label for="register-name">Seu nome</label>
+              <input
+                id="register-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Seu nome"
+                required
+              />
+
+              <label for="register-email">E-mail da compra</label>
+              <input
+                id="register-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="E-mail da compra"
+                required
+              />
+
+              <label for="register-password">Crie uma senha</label>
+              <input
+                id="register-password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                minlength="6"
+                placeholder="Mínimo de 6 caracteres"
+                required
+              />
+
+              <label for="register-confirm">Confirme sua senha</label>
+              <input
+                id="register-confirm"
+                name="confirmPassword"
+                type="password"
+                autocomplete="new-password"
+                minlength="6"
+                placeholder="Digite a senha novamente"
+                required
+              />
+
+              <p class="form-message" id="register-message" aria-live="polite"></p>
+              <button class="auth-submit" type="submit">Criar minha conta</button>
+            </form>
+
+            <p class="auth-switch">
+              Já tem uma conta?
+              <button type="button" data-show-login>Entrar</button>
+            </p>
+          </div>
+
+          <div id="login-panel" hidden>
+            <h2>Bem-vindo de volta</h2>
+            <p>Entre na sua conta para continuar</p>
+
+            <form id="login-form" class="auth-form">
+              <label for="login-email">E-mail</label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="E-mail"
+                required
+              />
+
+              <label for="login-password">Senha</label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Senha"
+                required
+              />
+
+              <p class="form-message" id="login-message" aria-live="polite"></p>
+              <button class="auth-submit" type="submit">Entrar</button>
+            </form>
+
+            <p class="auth-switch">
+              Ainda não tem uma conta?
+              <button type="button" data-show-register>Criar conta</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="app-view" class="site-view app-view" hidden>
+        <div class="app-shell">
+          <header class="app-header">
+            <button class="app-brand" type="button" data-app-panel="home">
+              <span class="app-brand__icon" aria-hidden="true">♫</span>
+              <span>Melodify</span>
+            </button>
+            <button
+              class="profile-button"
+              type="button"
+              data-app-panel="settings"
+              aria-label="Abrir configurações"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="3"></circle>
+                <path d="M6.8 19v-1.5a5.2 5.2 0 0 1 10.4 0V19"></path>
+              </svg>
+            </button>
+          </header>
+
+          <div class="app-content">
+            <section id="app-home" class="app-panel is-active" aria-labelledby="home-title">
+              <div class="product-hero">
+                <div class="product-hero__content">
+                  <h1 id="home-title">Melodia do Amor</h1>
+                  <p>Ouça a frequência criada para fortalecer sua conexão amorosa.</p>
+                  <button type="button" class="pink-action" data-open-detail>
+                    <span aria-hidden="true">▷</span> Ouvir agora
+                  </button>
+                </div>
+              </div>
+
+              <div class="stats-grid" aria-label="Informações da Melodia do Amor">
+                <article>
+                  <span class="stat-icon">♬</span>
+                  <strong>+5 mil</strong>
+                  <small>Ouvintes</small>
+                </article>
+                <article>
+                  <span class="stat-icon">♡</span>
+                  <strong>5</strong>
+                  <small>Faixas</small>
+                </article>
+                <article>
+                  <span class="online-dot" aria-hidden="true"></span>
+                  <strong>Online</strong>
+                  <small>Acesso disponível</small>
+                </article>
+              </div>
+
+              <h2 class="app-section-title">Sua melodia</h2>
+              <button class="playlist-card" type="button" data-open-detail>
+                <img src="assets/mda-cover.png" alt="Capa da Melodia do Amor" />
+                <span class="playlist-card__text">
+                  <strong>Melodia do Amor</strong>
+                  <span>Frequência para reconexão amorosa</span>
+                  <small>5 faixas disponíveis</small>
+                </span>
+                <span class="playlist-card__play" aria-hidden="true">▷</span>
+              </button>
+            </section>
+
+            <section id="app-detail" class="app-panel" aria-labelledby="detail-title" hidden>
+              <div class="detail-hero">
+                <button class="detail-back" type="button" data-app-panel="home" aria-label="Voltar">
+                  ←
+                </button>
+                <div class="detail-hero__copy">
+                  <h1 id="detail-title">Melodia do Amor</h1>
+                  <p>Frequência para fortalecer sua conexão amorosa</p>
+                  <button class="pink-action" type="button" data-play-first>
+                    <span aria-hidden="true">▷</span> Reproduzir
+                  </button>
+                </div>
+              </div>
+
+              <h2 class="app-section-title">Faixas</h2>
+              <div id="track-list" class="track-list" aria-label="Faixas da Melodia do Amor"></div>
+            </section>
+
+            <section id="app-player" class="app-panel player-panel" aria-labelledby="player-track-title" hidden>
+              <header class="player-toolbar">
+                <button type="button" data-player-back aria-label="Voltar para as faixas">←</button>
+                <div>
+                  <strong>Tocando de</strong>
+                  <span>Melodia do Amor</span>
+                </div>
+                <button type="button" data-toast="Esta faixa faz parte da Melodia do Amor." aria-label="Mais opções">•••</button>
+              </header>
+
+              <div class="player-body">
+                <img id="player-cover" class="player-cover" src="assets/mda-cover.png" alt="Capa da Melodia do Amor" />
+
+                <div class="player-track-info">
+                  <div>
+                    <h1 id="player-track-title">Melodia do Amor</h1>
+                    <p>MDA</p>
+                  </div>
+                  <button class="player-favorite" type="button" data-player-favorite aria-label="Adicionar aos favoritos" aria-pressed="false">♡</button>
+                </div>
+
+                <div class="player-progress">
+                  <input id="player-seek" type="range" min="0" max="300" value="0" step="0.1" aria-label="Progresso da reprodução" disabled />
+                  <div>
+                    <time id="player-current-time">0:00</time>
+                    <time id="player-duration">5:00</time>
+                  </div>
+                </div>
+
+                <div class="player-controls" aria-label="Controles de reprodução">
+                  <button type="button" data-shuffle aria-label="Ativar ordem aleatória" aria-pressed="false">⤨</button>
+                  <button type="button" data-previous aria-label="Faixa anterior">|◁</button>
+                  <button class="player-toggle" type="button" data-toggle-play aria-label="Reproduzir">▶</button>
+                  <button type="button" data-next aria-label="Próxima faixa">▷|</button>
+                  <button type="button" data-repeat aria-label="Repetir faixa" aria-pressed="false">↻</button>
+                </div>
+              </div>
+            </section>
+
+            <section id="app-favorites" class="app-panel favorites-panel" hidden>
+              <header class="favorites-heading">
+                <span aria-hidden="true">♥</span>
+                <div>
+                  <h1>Suas Favoritas</h1>
+                  <p id="favorites-count">0 músicas</p>
+                </div>
+              </header>
+
+              <div id="favorites-empty" class="favorites-empty">
+                <span aria-hidden="true">♡</span>
+                <h2>Nenhuma música favoritada</h2>
+                <p>Comece curtindo algumas músicas para vê-las aqui</p>
+              </div>
+
+              <div id="favorites-list" class="track-list favorites-list" aria-label="Músicas favoritas" hidden></div>
+            </section>
+
+            <section id="app-notifications" class="app-panel empty-panel" hidden>
+              <span aria-hidden="true">♢</span>
+              <h1>Notificações</h1>
+              <p>Você não tem novas notificações no momento.</p>
+            </section>
+
+            <section id="app-settings" class="app-panel settings-panel" hidden>
+              <h1>Configurações</h1>
+              <p class="settings-intro">Personalize sua experiência musical</p>
+
+              <h2>Aplicativo</h2>
+              <article class="setting-card">
+                <span class="setting-icon" aria-hidden="true">◎</span>
+                <div><strong>Idioma</strong><small>Português</small></div>
+                <button type="button" data-toast="O idioma já está definido como Português.">Alterar</button>
+              </article>
+              <article class="setting-card">
+                <span class="setting-icon" aria-hidden="true">♢</span>
+                <div><strong>Notificações</strong><small>Receber alertas importantes</small></div>
+                <label class="toggle"><input type="checkbox" checked /><span></span></label>
+              </article>
+
+              <h2>Áudio</h2>
+              <article class="setting-card">
+                <span class="setting-icon" aria-hidden="true">▯</span>
+                <div><strong>Reprodução automática</strong><small>Continuar automaticamente</small></div>
+                <label class="toggle"><input type="checkbox" /><span></span></label>
+              </article>
+              <article class="setting-card">
+                <span class="setting-icon" aria-hidden="true">▯</span>
+                <div><strong>Alta qualidade</strong><small>Streaming em qualidade superior</small></div>
+                <label class="toggle"><input type="checkbox" checked /><span></span></label>
+              </article>
+
+              <h2>Conta</h2>
+              <button class="logout-button" type="button" data-logout>↪ <span>Sair da conta</span></button>
+            </section>
+          </div>
+
+          <aside class="mini-player" aria-label="Reprodutor atual" hidden>
+            <button class="mini-player__main" type="button" data-open-player>
+              <img src="assets/mda-cover.png" alt="" />
+              <span>
+                <strong data-mini-title>Melodia do Amor</strong>
+                <small>MDA</small>
+              </span>
+            </button>
+            <button type="button" data-mini-favorite aria-label="Adicionar aos favoritos" aria-pressed="false">♡</button>
+            <button class="mini-player__toggle" type="button" data-toggle-play aria-label="Reproduzir">▶</button>
+            <button type="button" data-next aria-label="Próxima faixa">▷|</button>
+            <button type="button" data-close-player aria-label="Fechar reprodutor">×</button>
+          </aside>
+
+          <nav class="bottom-nav" aria-label="Menu do aplicativo">
+            <button class="is-active" type="button" data-app-panel="home">
+              <span aria-hidden="true">⌂</span><small>Home</small>
+            </button>
+            <button type="button" data-app-panel="favorites">
+              <span aria-hidden="true">♡</span><small>Favoritos</small>
+            </button>
+            <button type="button" data-app-panel="notifications">
+              <span aria-hidden="true">♢</span><small>Notificações</small>
+            </button>
+            <button type="button" data-app-panel="settings">
+              <span aria-hidden="true">⚙</span><small>Configurações</small>
+            </button>
+          </nav>
+
+          <audio id="audio-player" preload="metadata"></audio>
+          <div class="toast" role="status" aria-live="polite" hidden></div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>
